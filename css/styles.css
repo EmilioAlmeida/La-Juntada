@@ -49,9 +49,12 @@
 
 /* Carrousel*/
 .gira-gira {
-  max-height: 40vh;
+  display: flex-container;
+  height: 300px;
   border-top: 2px solid rgb(205, 180, 157);
 }
+
+
 
 
 

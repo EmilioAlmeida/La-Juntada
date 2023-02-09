@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+/* Barra de navegacion */
+.navbar {
+  padding: 2rem;
+  background-color: #647484;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(205, 180, 157);
+}
+
+.navbar-collapse {
+  padding: 1rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Principal */
+.asado {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../html/assets/imagenes/asadoYvino.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  
+}
+
+.asado h1, .asado h2 {
+  font-family: Solitreo;
+  color: rgb(126, 37, 37);
+}
+
+.asado h1 {
+  font-size: 4em;
+}
+
+.asado h2 {
+  font-size: 1.5em;
+}
+
+.asado .titles {
+  margin: 3% 20%;
+}
+
+
+/* Carrousel*/
+.gira-gira {
+  max-height: 40vh;
+  border-top: 2px solid rgb(205, 180, 157);
+}
+
+
+
+
+
+
+
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+  .LaJuntadaLogo {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .asado .titles {
+    margin: 3% 30%;
+  }
+   .asado h2 {
+    font-size: 1em;
+   }
+}
+
+@media screen and (max-width: 767px) {
+  .asado .titles {
+    margin: 2% 20%;
+  }
+   .asado h2 {
+    font-size: 1em;
+    color: red
+   }
+
+   .asado h1 {
+    
+    color: red
+   }
+}
+

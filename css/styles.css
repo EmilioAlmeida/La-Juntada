@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
 
+/* generales */
+
+
+
 /* Barra de navegacion */
 .navbar {
   padding: 2rem;
@@ -50,18 +54,136 @@
 /* Carrousel*/
 .gira-gira {
   display: flex-container;
-  height: 300px;
-  border-top: 2px solid rgb(205, 180, 157);
+  height: 200px;
+  border-top: 1px solid rgb(205, 180, 157);
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 70px;
+  width: 70px;
+  margin: 5px  ;
 }
 
 
+/* Quienes somos */
+.somos  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid brown;
+  margin-top:3px;
+  border-radius: 5px;
+}
 
+#logo-somos {
+  padding: 10px;
+  
+}
 
+.somos h2 {
+  font-family: Solitreo;
+  color: rgb(126, 37, 37);
+  margin-top: 2rem;
+}
 
+/*  Como  */
+.como {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top:3px;  
+}
 
+.como .container {
+  border: 1px solid brown;
+  border-radius: 5px;
+  padding: 1rem;
+}
 
+/*  Testimonios */
 
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top:3px;  
+}
 
+.testimonios .container {
+  border: 1px solid brown;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.testimonios h2 {
+  font-family: Solitreo;
+  color: rgb(126, 37, 37);
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  min-height: 360px ;
+  background-color: bisque;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+
+}
+
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #9B1DEB;
+  border: 1px solid #9B1DEB;
+}
+
+.iconos-redes-sociales a:hover i{
+  color: rgb(12, 26, 155);
+}
+
+.iconos-redes-sociales i {
+  font-size: 30px;
+  color: black
+  
+}
 
 
 /* Adaptable (Responsivo) */

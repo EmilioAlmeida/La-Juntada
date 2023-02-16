@@ -26,10 +26,10 @@
 .asado {
   display: flex;
   flex-direction: column;
-  background-image: url("../html/assets/imagenes/asadoYvino.jpg");
+  background-image: url("/imagenes/asadoYvino.jpg");
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   
 }
 
@@ -72,6 +72,7 @@
   width: 70px;
   margin: 5px  ;
 }
+
 
 
 /* Quienes somos */
@@ -148,7 +149,7 @@ footer {
 .footer-texto{
   font-size: 1.5rem;
   padding: 20px;
-  font-family: 'Quicksand', sans-serif;;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .iconos-redes-sociales a {
@@ -164,6 +165,10 @@ footer {
   transition: all 0.2s ease-in;
 }
 
+#ancla {
+  color: rgb(64, 59, 59);
+}
+
 .iconos-redes-sociales{
   color: white;
   font-size: 1.5rem;
@@ -171,8 +176,8 @@ footer {
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: #9B1DEB;
-  border: 1px solid #9B1DEB;
+  background-color: #7c787e;
+  border: 1px solid #7c787e;
 }
 
 .iconos-redes-sociales a:hover i{
@@ -188,9 +193,26 @@ footer {
 
 /* Adaptable (Responsivo) */
 
+@media screen and (min-width: 360px) {
+  .asado {
+    height: 60vh;
+  }
+}
+@media screen and (min-width: 767px) {
+  .asado {
+    height: 80vh;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .LaJuntadaLogo {
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .giratorio .gira-gira{
+    height: 800px;
   }
 }
 

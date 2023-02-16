@@ -23,9 +23,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand" href="#">
-          <img src="../html/assets/imagenes/Logo La Juntada.jpg" width="100" alt="Logo de la web" class="LaJuntadaLogo">
+          <img src="./imagenes/Logo La Juntada.jpg" width="100" alt="Logo de la web" class="LaJuntadaLogo">
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-content-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#imagenes">Imágenes</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Quienes somos</a>
           </li>
@@ -56,36 +59,36 @@
   <!--</div>-->
   <!-- Carrousel-->
   
-  <div id="carouselExampleAutoplaying" class="carousel slide gira-gira" data-bs-ride="carousel">
-    <div class="carousel-inner gira-gira">
+  <div id="carouselExampleAutoplaying" class="carousel slide giratorio" data-bs-ride="carousel">
+    <div class="carousel-inner gira-gira" id="imagenes">
       <div class="carousel-item active imagen-car">
         <div class="container">
-          <img src="/html/assets/imagenes/Argentina_asado1.jpg" class="d-block w-100 h-60" alt="...">
+          <img src="./imagenes/asado1.jpg" class="d-block w-100 h-60" alt="...">
         </div>
       </div>  
       <div class="carousel-item imagen-car">
         <div class="container">
-          <img src="/html/assets/imagenes/servicio-catering-a-domicilio.jpg" class="d-block w-100 h-60" alt="...">
+          <img src="./imagenes/servicio-catering-a-domicilio.jpg" class="d-block w-100 h-60" alt="...">
         </div>
       </div>  
       <div class="carousel-item imagen-car">
         <div class="container">
-          <img src="/html/assets/imagenes/parrillero.jpg" class="d-block w-100 h-60" alt="...">
+          <img src="./imagenes/asando.jpg" class="d-block w-100 h-60" alt="...">
         </div>
       </div>  
       <div class="carousel-item imagen-car">
         <div class="container">
-          <img src="/html/assets/imagenes/asado1.jpg" class="d-block w-100 h-60" alt="...">
+          <img src="./imagenes/asado.jpg" class="d-block w-100 h-60" alt="...">
         </div>
       </div>  
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <button class="carousel-control-next"  type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden" >Next</span>
     </button>
   </div>
 
@@ -97,7 +100,7 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="./html/assets/imagenes/La Juntada Logo.jpg" class="img-fluid rounded-start" id="logo-somos" alt="Logo.">
+        <img src="./imagenes/La Juntada Logo.jpg" class="img-fluid rounded-start" id="logo-somos" alt="Logo.">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -185,8 +188,9 @@
 
 <!-- Footer-->
 <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-  <img class="footer-logo" id="footer-logo" src="/html/assets/imagenes/La Juntada Logo.jpg" alt="logo">
+  <img class="footer-logo" id="footer-logo" src="./imagenes/Logo La Juntada.jpg" alt="logo">
   <p class="footer-texto">Hablemos!</p>
+ 
   <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
     <a href="#" target="_blank" rel="noopener noreferrer">
       <i class="bi bi-twitter"></i>
@@ -206,6 +210,7 @@
 
   </div>
   <div class="derechos-de-autor">Creado por Emilio Oscar Almeida (2023) &#169</div>
+  <a href="https://emilioalmeida.github.io/Mi_Portfolio/" id="ancla" target="_blank" rel="noopener noreferrer">Mi portfolio</a>  
 </footer>
     
 

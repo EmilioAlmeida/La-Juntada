@@ -2,7 +2,9 @@
 
 /* generales */
 
-
+* {
+  box-sizing: border-box;
+}
 
 /* Barra de navegacion */
 .navbar {
@@ -57,8 +59,9 @@
 /* Carrousel*/
 .gira-gira {
   display: flex-container;
-  height: 200px;
+  height: 150px;
   border-top: 1px solid rgb(205, 180, 157);
+  background-color: #647484;
 }
 
 .carousel-item .container {
@@ -85,8 +88,9 @@
   align-items: center;
   justify-items: center;
   border: 1px solid brown;
-  margin-top:3px;
+  margin-top:1px;
   border-radius: 5px;
+  background-color: #647484;
 }
 
 #logo-somos {
@@ -106,12 +110,17 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  margin-top:3px;  
-}
-
-.como .container {
+  margin-top:1px;
+  background-color: #647484; 
   border: 1px solid brown;
   border-radius: 5px;
+  padding: 1rem; 
+  
+}
+
+
+.container {
+  height: 70vh;
   padding: 1rem;
 }
 
@@ -119,20 +128,23 @@
 .imagenes {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid brown ;
   padding: 2rem;
-  border-radius: 5px;
   width: 80vw;
   height: 10rem;
 }
+.column {
+  flex: 100%
+}
 
-.imagenes img {
+.column img {
   width: 9em;
   height: 9em;
   border: 1px solid brown;
   border-radius: 5px;
+  margin-bottom: .2rem;
   }
 
 /*  Testimonios */
@@ -235,10 +247,15 @@ footer {
 
 @media screen and (min-width: 767px) {
   .giratorio .gira-gira{
-    height: 800px;
+    height: 60vh;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .giratorio .gira-gira{
+    height: 60vh;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .asado .titles {
@@ -264,3 +281,47 @@ footer {
    }
 }
 
+@media screen and (max-width: 1200px) {
+  .column img {
+    width: 7em;
+    height: 7em;
+   }
+}
+
+@media screen and (max-width: 992px) {
+  .column img {
+    width: 5em;
+    height: 5em;
+   }
+}
+
+@media screen and (max-width: 517px) {
+  .column img {
+    width: 4em;
+    height: 4em;
+   }
+}
+
+@media screen and (max-width: 509px) {
+  .container {
+    padding: .5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container h4{
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container p{
+    font-size: small;
+  }
+}

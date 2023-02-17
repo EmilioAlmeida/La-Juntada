@@ -35,9 +35,10 @@
   background-color: #6699;
 }
 
-.asado h1, .asado h2 {
+.titles h1, .titles h2 {
   font-family: Solitreo;
   color: rgb(126, 37, 37);
+  margin: 10px;
 }
 
 .asado h1 {
@@ -228,6 +229,12 @@ footer {
 
 /* Adaptable (Responsivo) */
 
+@media screen and (max-width: 810px){
+.titles h1, .titles h2 {
+  font-size: 21px;
+}
+}
+
 @media screen and (min-width: 360px) {
   .asado {
     height: 60vh;
@@ -275,12 +282,12 @@ footer {
   }
    .asado h2 {
     font-size: 1em;
-    color: red
+    color: rgb(174, 14, 14)
    }
 
    .asado h1 {
     
-    color: red
+    color: rgb(174, 14, 14)
    }
 }
 

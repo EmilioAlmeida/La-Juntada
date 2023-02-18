@@ -173,6 +173,8 @@
 footer {
   min-height: 360px ;
   background-color: bisque;
+  padding-top: 1rem;;
+  padding-bottom: 2rem
 }
 
 .footer-logo {
